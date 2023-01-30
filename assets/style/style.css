@@ -1,0 +1,207 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+
+* {
+font-family: 'Raleway', sans-serif;
+}
+
+body {
+    width: 100vw;
+    margin: 0;
+    padding: 0;
+    top: 0px;
+    background-color: whitesmoke;
+}
+
+header {
+    margin: 0;
+    padding: 0;
+    background-color: #111111;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header img{
+    margin: 5px;
+    padding: 0;
+}
+
+#burgerMenu {
+    background-color: #111111;
+    opacity: 0.8;
+    width: 100%;
+    position: absolute;
+    top: 80px;
+    left: -550px;
+    border-radius:0px 0px 10px 10px;
+    z-index: 1;
+}
+
+#burgerMenu ul{
+    list-style: none;
+    padding: 0;
+}
+
+#burgerMenu li{
+    color: whitesmoke;
+    font-size: 22px;
+    font-weight: 650;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+#burgerMenu li a{
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 40px;
+    color: whitesmoke;
+    text-shadow: 1px 1px 1px black;
+}
+
+#burgerMenu li a:hover{
+    opacity: 0.5;
+}
+
+#burgerLogo{
+    width: 40px;
+    position: absolute;
+    top: 20px;
+    right: 10px;
+    text-shadow: 1px 1px 1px whitesmoke;
+}
+
+#burgerCheck {
+    display: none;
+}
+
+#burgerCheck:checked ~ #burgerMenu {
+    position: absolute;
+    top: 80px;
+    left: 0px;
+    transition: 1s;
+    z-index: 0;
+}
+
+#burgerLogo:hover {
+    opacity: 0.5;
+    width: 42px;
+} 
+
+#desktopMenu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-transform: uppercase;
+}
+
+#desktopMenu li{
+    list-style: none;
+    display: inline-block;
+
+}
+
+#desktopMenu li a{
+    padding: 10px;
+    display: flex;
+    text-decoration: none;
+    color: whitesmoke;
+}
+
+#desktopMenu li a:hover{
+    transition: 0.8s;
+    opacity: 0.5;
+    text-decoration: underline;
+}
+
+main section {
+    margin: 0;
+    padding: 0;
+}
+
+#couverture p {
+    position: absolute;
+    font-size: 22px;
+    font-weight: 600;
+    width: 200px;
+    right: 50%;
+    left: 50%;
+    top: 240px;
+}
+
+#photoCouverture {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+#middleCatch {
+    background-color: #111111;
+    color: whitesmoke;
+    margin: -5px 0 0 0;
+    padding: 0;
+    font-size: 15px;
+    text-align: center;
+    width: 100%;
+    font-style: italic;
+    
+}
+
+#middleCatch p{
+    opacity: 0.5;
+}
+
+#quickGalery {
+    padding: 0;
+    margin: 0;
+}
+
+#quickGalery img {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    border: 10px solid whitesmoke;
+    box-sizing: border-box;   
+}
+
+@media screen and (min-width:400px){
+    #burgerMenu {
+        top: 80px;
+        left: -800px;
+    } 
+}
+
+
+@media screen and (max-width:800px){
+    #desktopMenu {
+        display: none;
+    }
+
+    #logoLoxodonta {
+        width: 120px;
+        position: relative;
+        left: 0px;
+    }
+}
+
+@media screen and (min-width:800px){
+    #burgerMenu, #burgerCheck, #burgerLogo {
+        display: none;
+    }
+    #logoLoxodonta {
+        position: absolute;
+        left: 1% ; 
+        top: 5px;
+        width: 90px;
+    }
+}
+
+#pictureGrid {
+    display: grid;
+    grid-template: ;
+}
+
+.picture {
+
+}
