@@ -154,14 +154,14 @@ main section {
 
 #quickGalery {
     padding: 0;
-    margin: 0;
+    margin: 2.5px 0px 2.5px 0px;
 }
 
 #quickGalery img {
     padding: 0;
     margin: 0;
     width: 100%;
-    border: 10px solid whitesmoke;
+    border: 2.5px solid whitesmoke;
     box-sizing: border-box;   
 }
 
@@ -199,9 +199,39 @@ main section {
 
 #pictureGrid {
     display: grid;
-    grid-template: ;
+    width: 100%;
+    grid-template: repeat(2, 1fr) / repeat(2, 1fr);
+    grid-gap: 5px;
+    background-color: #111111;
+    margin: auto;
+    padding: auto;
+
 }
 
-.picture {
+#picture1 {
+    grid-row: span 1;
+    background-image: url(../media/ouzoud2.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
 
+#picture2 {
+    grid-row: span 1;
+    background-image: url(../media/trevi2.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+#picture3 {
+    grid-column:span 1;
+    background-image: url(../media/venise.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+#picture4 {
+    grid-column:span 1;
+    background-image: url(../media/velo.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
 }
