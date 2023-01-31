@@ -5,6 +5,7 @@ font-family: 'Raleway', sans-serif;
 }
 
 body {
+    height: 100vh;
     width: 100vw;
     margin: 0;
     padding: 0;
@@ -31,7 +32,7 @@ header img{
     opacity: 0.8;
     width: 100%;
     position: absolute;
-    top: 80px;
+    top: 90px;
     left: -550px;
     border-radius:0px 0px 10px 10px;
     z-index: 1;
@@ -78,13 +79,18 @@ header img{
 
 #burgerCheck:checked ~ #burgerMenu {
     position: absolute;
-    top: 80px;
+    top: 90px;
     left: 0px;
     transition: 1s;
     z-index: 0;
 }
 
 #burgerLogo:hover {
+    opacity: 0.5;
+    width: 42px;
+} 
+
+#burgerLogo:active {
     opacity: 0.5;
     width: 42px;
 } 
@@ -99,6 +105,7 @@ header img{
 #desktopMenu li{
     list-style: none;
     display: inline-block;
+    font-size: 24px;
 
 }
 
@@ -113,6 +120,14 @@ header img{
     transition: 0.8s;
     opacity: 0.5;
     text-decoration: underline;
+
+}
+
+#desktopMenu li a:active{
+    opacity: 0.5;
+    text-decoration: underline;
+    font-size: 25px;
+    font-size: 25px;
 }
 
 main section {
@@ -154,16 +169,41 @@ main section {
 
 #quickGalery {
     padding: 0;
-    margin: 2.5px 0px 2.5px 0px;
 }
 
 #quickGalery img {
     padding: 0;
     margin: 0;
     width: 100%;
-    border: 2.5px solid whitesmoke;
+    border-top: 2.5px solid whitesmoke;
+    border-left: 2.5px solid whitesmoke;
+    border-right: 2.5px solid whitesmoke;
     box-sizing: border-box;   
 }
+
+#betweenPicture {
+    text-align: center;
+    margin: 0px;
+    padding: 0px;
+    color: #111111;
+    font-size: 16px;
+    margin-top: 3px;
+}
+
+#betweenPicture h2 {
+    text-align: center;
+    margin: 3px;
+    padding: 0px;
+    font-size: 18px;
+}
+
+#quickGalery img:hover {
+    opacity: 0.8;
+    transition: 0.5s;
+}
+
+
+
 
 @media screen and (min-width:400px){
     #burgerMenu {
@@ -195,43 +235,13 @@ main section {
         top: 5px;
         width: 90px;
     }
+    
+    main section div p br {
+        display: none;
+    }
+
+    #middleCatch {
+        font-size: 20px;
+    }
 }
 
-#pictureGrid {
-    display: grid;
-    width: 100%;
-    grid-template: repeat(2, 1fr) / repeat(2, 1fr);
-    grid-gap: 5px;
-    background-color: #111111;
-    margin: auto;
-    padding: auto;
-
-}
-
-#picture1 {
-    grid-row: span 1;
-    background-image: url(../media/ouzoud2.jpg);
-    background-repeat: no-repeat;
-    background-size: contain;
-}
-
-#picture2 {
-    grid-row: span 1;
-    background-image: url(../media/trevi2.jpg);
-    background-repeat: no-repeat;
-    background-size: contain;
-}
-
-#picture3 {
-    grid-column:span 1;
-    background-image: url(../media/venise.jpg);
-    background-repeat: no-repeat;
-    background-size: contain;
-}
-
-#picture4 {
-    grid-column:span 1;
-    background-image: url(../media/velo.jpg);
-    background-repeat: no-repeat;
-    background-size: contain;
-}
