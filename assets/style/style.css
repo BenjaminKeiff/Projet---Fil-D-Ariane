@@ -167,11 +167,11 @@ main section {
     opacity: 0.5;
 }
 
-#quickGalery {
+.quickGalery {
     padding: 0;
 }
 
-#quickGalery img {
+.quickGalery img {
     padding: 0;
     margin: 0;
     width: 100%;
@@ -181,7 +181,13 @@ main section {
     box-sizing: border-box;   
 }
 
-#betweenPicture {
+.quickGalery h4 {
+    margin: 0px 10px 10px 0px;
+    text-align: center;
+    font-size: 22px;
+}
+
+.betweenPicture {
     text-align: center;
     margin: 0px;
     padding: 0px;
@@ -190,20 +196,50 @@ main section {
     margin-top: 3px;
 }
 
-#betweenPicture h2 {
+.betweenPicture h2 {
     text-align: center;
     margin: 3px;
     padding: 0px;
     font-size: 18px;
+    opacity: 0.6;
 }
 
-#quickGalery img:hover {
+.quickGalery img:hover {
     opacity: 0.8;
     transition: 0.5s;
 }
 
+#nosDestination div h4 {
+    text-align: center;
+    font-size: 20px;
+    margin: 0;
+    padding: 5px;
+    text-transform: uppercase;  
+    background-color: #111111;
+}
 
+#nosDestination div h4:last-child {
+    border-left: 1px dashed #111111;
+    margin: 0;
+}
 
+#nosDestination div h4 a{
+    text-decoration: none;
+    color: whitesmoke;  
+}
+
+#nosDestination div p{
+    text-align: center;
+}
+
+hr {
+    margin: 0;
+}
+
+#nosDestination div p:last-child{
+    box-sizing: border-box;
+    border-left: 1px dashed #111111;
+}
 
 @media screen and (min-width:400px){
     #burgerMenu {
