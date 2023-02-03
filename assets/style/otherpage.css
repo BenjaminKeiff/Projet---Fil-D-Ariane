@@ -1,0 +1,20 @@
+/* #################################
+            CONTACT
+################################# */
+
+#mail {
+    text-align: center;
+    margin: 15px;
+    font-size: 24px;
+}
+
+#mail a {
+    text-decoration: none;
+    color: #111111;
+    opacity: 0.8;
+}
+
+#mail a:hover {
+    opacity: 1;
+}
+
