@@ -341,6 +341,25 @@ main section {
 }
 
 /* ########################################
+              SCROLL AUTO
+######################################## */
+
+#scrolltop {
+    position: fixed;
+    bottom: 30px;
+    right: 10px;
+}
+
+#scrolltop img {
+    width: 50px;
+    opacity: 0.7;
+}
+
+#scrolltop img:hover {
+    opacity: 1;
+}
+
+/* ########################################
                 FOOTER
 ######################################## */
 
@@ -483,4 +502,20 @@ footer p a:hover{
         padding: 0;
         filter: none;
     }
+}
+
+/* ########################################
+              MENTION LEGALES
+######################################## */
+
+#mention-legale a {
+    text-decoration: none;
+    color: #111111;
+    opacity: 0.7;
+}
+
+#mention-legale a:hover {
+    text-decoration: none;
+    color: #111111;
+    opacity: 0.9;
 }
