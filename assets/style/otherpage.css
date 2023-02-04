@@ -18,3 +18,17 @@
     opacity: 1;
 }
 
+#formulaire {
+    height: 500px;
+    width: 1000px;
+    display: grid;
+    grid-template: repeat(2, 1fr) / repeat(3, 1fr);
+    grid-gap: 10px;
+    background-color: yellow;
+}
+
+#name
+
+
+#
+

@@ -53,13 +53,37 @@
                     ci-dessous. Vous pouvez me contacter aussi directement via 
                     mail, je ferai tout pour vous répondre au plus vite :
                 </p>
+
+                <div class="row espaceur">
+                    <!-- espaceur -->
+                </div>
+                
                 <p id="mail" class="container">
                    <a href="mailto:benjamin.keiff@stagiairesmns.fr">l&b@loxodontatravelers.fr</a>
                 </p>
-                <form action="contact">
-                    <label for="name"></label>
-                </form>
-            </div>
+                
+                <div class="row espaceur">
+                    <!-- espaceur -->
+                </div>
+
+                <div class="row">
+                    <form action="contact">
+                        <div class="container" id="formulaire">
+                            <div id="name" >
+                                <label for="name">Nom :</label>
+                                <input type="text" id="name" name="user_name">
+                            </div>
+                            <div id="mail" >
+                                <label for="mail">E-Mail :</label>
+                                <input type="email" id="mail" name="user_mail">
+                            </div>
+                            <div id="msg" >
+                                <label for="msg">Message :</label>
+                                <textarea id="msg" name="user_message"></textarea>
+                            </div>
+                        </div>
+                    </form>
+                </div>
         </section>
 
     </main>
