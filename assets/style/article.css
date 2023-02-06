@@ -2,3 +2,16 @@
               TOUR DE FRANCE
 ######################################## */
 
+h2 {
+    font-size: larger;
+}
+
+section p {
+    text-align: left;
+}
+
+p img {
+    width: 100%;
+    margin: 10px;
+}
+
