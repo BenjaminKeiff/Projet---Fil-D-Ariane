@@ -1,6 +1,14 @@
 /* #################################
             CONTACT
 ################################# */
+h1 {
+    font-size: x-large;
+}
+
+#text-contact {
+    font-size: 16px;
+    margin-top: 10px;
+}
 
 #mail {
     text-align: center;
@@ -10,6 +18,7 @@
     text-decoration: none;
     color: #111111;
     opacity: 0.8;
+    font-size: 20px;
 }
 
 #mail a:hover {
@@ -17,18 +26,18 @@
 }
 
 form {
-    background-color: #ff8800b7;
-    background-image: url(../media/Broceliande.jpg);
+    background-image: url(../media/Broceliande-flou.jpg);
     background-position: center;
     background-size: cover;
-    filter: blur(1px);
-    height: 480px;
-    border-radius: 5px;
+    height: 520px;
+    border-radius: 10px;
+    color: whitesmoke;
+    text-shadow: 1px 1px 1px #111111;
 }
 
 #formulaire {
     min-height: 50px;
-    width: 70%;
+    width: 100%;
     display: grid;
     grid-template: repeat(4, 1fr) / repeat(2, 1fr);
     margin: auto;
@@ -49,15 +58,20 @@ form {
 }
 #formulaire input {
     width: 100%;
+    border-radius: 5px;
+    box-shadow: 2px 2px 2px #015205 ;
 }
 
 #formulaire textarea {
     width: 100%;
     height: 160%;
+    border-radius: 5px;
+    box-shadow: 2px 2px 2px #015205 ;
+    resize : none;
 }
 
 #formulaire .name {
-    margin-top: 15px;  
+    margin-top: 10px;  
 }
 
 .name {
@@ -76,11 +90,15 @@ form {
 
 #send {
     position: relative;
-    top: -30px;
-    right: -19%;
+    top: 55px;
+    right: -80%;
 }
 
 @media screen and (min-width:600px){
+    h1 {
+        font-size: 36px;
+    }
+    
     form {
         height: 480px;
     }
@@ -99,25 +117,48 @@ form {
     }
 
     #formulaire textarea {
-        height: 300%;
+        height: 160%;
     }
 
     #send {
-        top: -40px;
+        right: -85%;
     }
 
 }
 
 @media screen and (min-width:800px){
     #send {
-        top: -40px;
-        right: -18%;
+        top: 10px;
+        right: -90%;
     }
+
+    .email-objet {
+        grid-column: span 1;
+    }
+
+    #formulaire textarea {
+        height: 230%;
+        margin-top: 10px;
+    }
+
 }
 
 
 @media screen and (min-width:1200px){
+    
     #send {
-        right: -16.5%;
+        right: -94%;
+    }
+
+    .text {
+        font-size: 20px;
+    }
+
+    #mail {
+        font-size: x-large;
+    }
+
+    #email {
+        grid-column: span 1;
     }
 }

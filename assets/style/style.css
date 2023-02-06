@@ -17,6 +17,9 @@ body {
                 HEADER
 ######################################## */
 
+h1 {
+    text-transform: uppercase;
+}
 
 header {
     margin: 0;
