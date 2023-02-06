@@ -3,9 +3,7 @@
 ################################# */
 
 #mail {
-    text-align: center;
-    margin: 15px;
-    font-size: 24px;
+
 }
 
 #mail a {
@@ -22,13 +20,24 @@
     height: 500px;
     width: 1000px;
     display: grid;
-    grid-template: repeat(2, 1fr) / repeat(3, 1fr);
+    grid-template: repeat(3, 1fr) / repeat(2, 1fr);
     grid-gap: 10px;
     background-color: yellow;
+    
 }
 
-#name
+.name {
+    grid-column: span 1;
+    background-color: #e5e5e5;
+    text-align: left;
+    margin: 15px;
+    font-size: 18px;
+}
 
-
-#
-
+.mail-message {
+    grid-column: span 2;
+    background-color: #e5e5e5;
+    text-align: left;
+    margin: 15px;
+    font-size: 18px;
+}
