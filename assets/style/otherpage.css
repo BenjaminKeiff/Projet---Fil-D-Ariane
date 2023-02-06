@@ -3,7 +3,7 @@
 ################################# */
 
 #mail {
-
+    text-align: center;
 }
 
 #mail a {
@@ -16,19 +16,52 @@
     opacity: 1;
 }
 
+form {
+    background-color: #ff8800b7;
+    background-image: url(../media/Broceliande.jpg);
+    background-position: center;
+    background-size: cover;
+    filter: blur(1px);
+    height: 480px;
+    border-radius: 5px;
+}
+
 #formulaire {
-    height: 500px;
-    width: 1000px;
+    min-height: 50px;
+    width: 70%;
     display: grid;
-    grid-template: repeat(3, 1fr) / repeat(2, 1fr);
-    grid-gap: 10px;
-    background-color: yellow;
-    
+    grid-template: repeat(4, 1fr) / repeat(2, 1fr);
+    margin: auto;
+    padding: auto;
+}
+
+#formulaire div {
+    display: flex;
+    align-items: center;
+    margin: 10px;
+    padding: 10px;
+    flex-wrap: wrap;
+}
+
+#formulaire label {
+    width: 100%;
+    margin: 0;
+}
+#formulaire input {
+    width: 100%;
+}
+
+#formulaire textarea {
+    width: 100%;
+    height: 160%;
+}
+
+#formulaire .name {
+    margin-top: 15px;  
 }
 
 .name {
-    grid-column: span 1;
-    background-color: #e5e5e5;
+    grid-column: span 2;
     text-align: left;
     margin: 15px;
     font-size: 18px;
@@ -36,8 +69,55 @@
 
 .mail-message {
     grid-column: span 2;
-    background-color: #e5e5e5;
     text-align: left;
     margin: 15px;
     font-size: 18px;
+}
+
+#send {
+    position: relative;
+    top: -30px;
+    right: -19%;
+}
+
+@media screen and (min-width:600px){
+    form {
+        height: 480px;
+    }
+    .name {
+        grid-column: span 1;
+        text-align: left;
+        margin: 15px;
+        font-size: 18px;
+    }
+    
+    .mail-message {
+        grid-column: span 2;
+        text-align: left;
+        margin: 15px;
+        font-size: 18px;
+    }
+
+    #formulaire textarea {
+        height: 300%;
+    }
+
+    #send {
+        top: -40px;
+    }
+
+}
+
+@media screen and (min-width:800px){
+    #send {
+        top: -40px;
+        right: -18%;
+    }
+}
+
+
+@media screen and (min-width:1200px){
+    #send {
+        right: -16.5%;
+    }
 }

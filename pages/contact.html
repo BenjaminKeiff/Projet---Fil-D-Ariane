@@ -39,7 +39,7 @@
         </div>
     </header>
 
-    <main>
+    <main class="row">
 
         <div class="row espaceur">
             <!-- espaceur -->
@@ -69,24 +69,27 @@
                 <div class="row">
                     <form action="contact">
                         <div class="container" id="formulaire">
-                            <div class="name" >
+                            <div class="name">
                                 <label for="name">Prénom :</label>
-                                <input  placeholder="John" type="text" name="user_name">
+                                <input  placeholder=" John" type="text" name="user_name">
                             </div>
                             <div class="name" >
                                 <label for="lastname">Nom :</label>
-                                <input placeholder="Doe" type="text" name="user_lastname">
+                                <input placeholder=" marston" type="text" name="user_lastname">
                             </div>
                             <div class="mail-message" >
                                 <label for="mail">E-Mail :</label>
-                                <input placeholder="John.doe@mail.com" type="email" name="user_mail">
+                                <input placeholder=" John.marston@bhope.com" type="email" name="user_mail">
                             </div>
                             <div class="mail-message" >
                                 <label for="msg">Message :</label>
-                                <textarea rows="10" cols="50" placeholder="..." name="user_message "></textarea>
+                                <textarea placeholder=" ..." name="user_message "></textarea>
                             </div>
                         </div>
                     </form>
+                    <div id="send">
+                        <input type="submit" value="Envoyer">
+                    </div>
                 </div>
         </section>
 
