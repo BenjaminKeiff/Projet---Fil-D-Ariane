@@ -17,16 +17,20 @@ p img {
 
 @media screen and (min-width:1200px) {
     .blog {
-        margin: auto;
+        margin: 20px;
         padding: auto;
         height: 500px;
+        margin-bottom: 50px;
+    }
+
+    .blog img {
+        height: 250px;
+
     }
     
     .blog p {
-        /* display: inline-block;
-        width: 20%;
-        border: 1px solid #111111;
-        padding: 10px; */
+        float: left;
+        padding: 10px;
 
     }
 }
