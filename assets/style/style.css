@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
 
 * {
-font-family: 'Raleway', sans-serif;
+font-family: 'Raleway', sans-serif, Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
 body {
@@ -143,8 +143,7 @@ header img{
 
 #desktopMenu li a:hover{
     transition: 0.8s;
-    color: #778c64ff;
-    opacity: 0.9;
+    opacity: 0.5;
     text-decoration: underline;
 
 }
@@ -182,25 +181,20 @@ main section {
 
 #photoCouverture {
     width: 100%;
-    margin: 0;
-    padding: 0;
 }
 
 #middleCatch {
-    background-color: #111111;
-    margin: -5px 0 0 0;
     padding: 0;
-    font-size: 15px;
     text-align: center;
     width: 100%;
     font-style: italic;
-    
+    position: sticky;
+    bottom: 4%;    
 }
 
 #middleCatch p{
-    opacity: 0.7;
     color: #f6ca83ff;
-
+    font-size: 26px;
 }
 
 #destination {
