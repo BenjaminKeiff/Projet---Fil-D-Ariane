@@ -84,21 +84,6 @@ opacity: 1;
     }
 }
 
-@media screen and (max-width:700px){
-    .endImg{
-        display: none;
-    }
-}
-
-@media screen and (max-width:700px){
-    .endImg{
-        display: block;
-    }
-    #finalText p img{
-        display: none;
-    }
-}
-
 @media screen and (min-width:1200px) {
     .espaceurXS {
         display: none;
