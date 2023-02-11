@@ -2,10 +2,6 @@
               TOUR DE FRANCE
 ######################################## */
 
-h2 {
-    font-size: larger;
-}
-
 section p {
     text-align: left;
 }
@@ -16,22 +12,57 @@ p img {
 }
 
 @media screen and (min-width:1200px) {
+    h1 {
+        font-size: 36px;
+        padding-top: 20px;
+        padding-bottom: 10px;
+        font-weight: 900;
+    }
+
+    h2 {
+        text-transform: uppercase;
+        font-size: x-large;
+        padding-top: 10px;
+        margin-bottom: 0;
+        margin-left: 20px;
+    }
+
     .blog {
         margin: 20px;
-        padding: auto;
-        height: 500px;
-        margin-bottom: 50px;
     }
 
-    .blog img {
-        height: 250px;
-
+    .post {
+        box-sizing: border-box;
+        height: 630px;
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
     }
     
-    .blog p {
-        float: left;
-        padding: 10px;
-
+    .post p {
+        padding: 30px;
+        text-align: justify;
+        margin-bottom: 0;
+        margin-top: 0;
+        
     }
+    
+    .espaceurLG {
+        height: 60px;
+    }
+    
+    .blog img {
+        width: 100%;
+        /* box-sizing: border-box; */
+        /* border: 10px solid whitesmoke; */
+        padding: 20px;    
+        margin-top: 0;
+        padding-top: 0;
+        
+    }
+    
+    #finalText{
+            padding: 50px;
+    }
+    
 }
-
