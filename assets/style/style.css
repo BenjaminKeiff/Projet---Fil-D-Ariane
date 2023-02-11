@@ -76,7 +76,7 @@ header img{
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 40px;
+    padding: 30px;
     color: #f6ca83ff;
     text-shadow: 1px 1px 1px black;
 }
@@ -222,9 +222,9 @@ main section {
     padding: 0;
     margin: 0;
     width: 100%;
-    border-top: 2.5px solid #fbe7c6ff;
-    border-left: 2.5px solid #fbe7c6ff;
-    border-right: 2.5px solid #fbe7c6ff;
+    border-top: 2.5px solid rgba(251, 231, 198, 0.288);
+    border-left: 2.5px solid rgba(251, 231, 198, 0.288);
+    border-right: 2.5px solid rgba(251, 231, 198, 0.288);
     box-sizing: border-box;   
 }
 
@@ -420,6 +420,10 @@ footer p a:hover{
         top: 80px;
         left: -800px;
     }
+
+    #burgerMenu li a{
+        padding: 2.5%;
+}
 }
 
 /* ########################################
@@ -427,7 +431,9 @@ footer p a:hover{
 ######################################## */
 
 @media screen and (min-width:600px){
-
+    #burgerMenu li a{
+        padding: 3.5%;
+}
 }
 
 
@@ -440,6 +446,10 @@ footer p a:hover{
         width: 120px;
         position: relative;
         left: 0px;
+    }
+
+    #middleCatch p {
+        font-size: 18px;
     }
 }
 
