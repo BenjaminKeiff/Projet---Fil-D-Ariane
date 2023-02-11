@@ -1,0 +1,19 @@
+
+/* ########################################
+             PAGES EN COURS
+######################################## */
+
+div {
+    text-align: center;
+}
+
+h2 {
+    font-size: 100px;
+    color: #657755ff;
+}
+
+footer  {
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
